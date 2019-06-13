@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">NYT</string>
+    <string name="published_on">Published on</string>
 </resources>
