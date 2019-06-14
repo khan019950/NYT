@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginBottom="6dp"
+        app:cardElevation="@dimen/cardview_default_elevation"
+        app:cardCornerRadius="10dp">
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:id="@+id/ac_img"
+
+                android:scaleType="centerCrop"
+                android:transitionName="ac_img"
+                tools:ignore="UnusedAttribute"
+                />
+
+
+            <TextView
+                android:id="@+id/ac_pub_on"
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="#5F5853"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:text="@string/published_on"
+                android:textColor="@color/colorAccent"
+                android:textStyle="bold" />
+
+            <com.wang.avi.AVLoadingIndicatorView
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="80dp"
+                app:indicatorName="BallSpinFadeLoaderIndicator"
+                android:visibility="visible"
+                app:indicatorColor="@color/colorPrimaryDark"
+                android:id="@+id/ac_loader"
+                />
+
+            <TextView
+                android:id="@+id/ac_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:text="Title"
+                android:textSize="17sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/ac_img"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ac_title"
+                android:id="@+id/ac_desc"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="12dp"
+                android:text="Description"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:id="@+id/ac_author"
+                android:maxLines="1"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="12dp"
+                android:drawablePadding="10dp"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="Author"
+                android:layout_below="@+id/ac_desc"
+                android:textStyle="italic"
+                />
+
+            <FrameLayout
+                android:layout_width="150dp"
+                android:layout_centerHorizontal="true"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ac_author"
+                android:layout_marginBottom="12dp">
+                <ImageView
+                    android:id="@+id/ac_share"
+                    android:src="@drawable/ic_share_black_24dp"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_gravity="left"/>
+
+                <ImageView
+                    android:id="@+id/ac_open"
+                    android:src="@drawable/ic_open_in_browser"
+                    android:layout_width="32dp"
+                    android:layout_height="32dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_gravity="right"/>
+            </FrameLayout>
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
