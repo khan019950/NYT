@@ -16,4 +16,4 @@
 * Splash screen
 
 ###### Screenshot:
-![alt text](https://drive.google.com/open?id=1xAGVlpo6o7y0Xdf8DpRBG9svTTND8pTx "screenshot")
+![Image](https://drive.google.com/uc?export=view&id=1xAGVlpo6o7y0Xdf8DpRBG9svTTND8pTx)
