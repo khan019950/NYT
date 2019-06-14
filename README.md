@@ -1,8 +1,8 @@
 # NYT
 
-###Android app for NYTimes news feed 
+### Android app for NYTimes news feed 
 
-####Functionalities:
+#### Functionalities:
 * Fetch news feed with the help of Retrtofit2 library.
 * Serialize and deserialize with Gson.
 * Refresh (api recall) on option item click.
@@ -10,12 +10,10 @@
 * Open news / read entire article via - intent.
 
 
-####Future / Possible functionalities:
+#### Future / Possible functionalities:
 * Proper error page: Handle network / api call failure properly
 * Ability to read entire article on click.
 * Splash screen
 
-######Screenshot:
-![alt text][logo]
-
-[logo]: https://drive.google.com/open?id=1xAGVlpo6o7y0Xdf8DpRBG9svTTND8pTx
+###### Screenshot:
+![alt text](https://drive.google.com/open?id=1xAGVlpo6o7y0Xdf8DpRBG9svTTND8pTx "screenshot")
